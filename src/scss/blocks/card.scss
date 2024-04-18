@@ -1,0 +1,37 @@
+@use '../mixins/responsive.scss' as *;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 327px;
+  height: 579px;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 24px;
+
+  @include responsive(laptop) {
+    width: 384px;
+  }
+}
+.avatar__image {
+  width: 88px;
+  height: 88px;
+  border-radius: 100px;
+}
+.title__card {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 24px;
+}
+.subtitle__card {
+  font-size: 14px;
+  color: #c4f82a;
+  margin-top: 4px;
+}
+.text__card {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 24px 24px 0;
+}
